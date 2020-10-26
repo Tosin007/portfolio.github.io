@@ -1,0 +1,349 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat;
+  
+}
+
+
+
+.title {
+  background-color: #165c54;
+  /* height: 100vh; */
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h1 {
+  font-family: Rancho;
+  font-size: 3rem;
+  color: #f1faee;
+}
+
+.intro {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  color: #f1faee;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+}
+
+.intro-two {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: #f1faee;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4rem;
+}
+
+.logo {
+  width: 10%;
+}
+
+.navbar-brand {
+  font-family: Rancho;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f1faee;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-family: Rancho;
+}
+
+/* Skills */
+
+.image {
+  position: relative;
+  /* width: 60%; */
+  /* height: 260px; */
+  /* top: -60px; */
+  left: 20px;
+  z-index: 1;
+}
+
+.skills .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills .row .card {
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(107, 129, 124, 0.5);
+  transition: 0.3s ease-in-out;
+  height: 300px;
+}
+
+.skills .row .card:hover {
+  height: 420px;
+}
+
+.skills .row .card .content {
+  position: relative;
+  margin-top: -80px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  /* width: 80%; */
+  /* font-size: 60%; */
+}
+.content h2 {
+  font-weight: bold;
+}
+
+.skills .row .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -10px;
+  transition-delay: 0.3s;
+}
+
+.skills {
+  padding: 7% 10%;
+  background-color: #f1faee;
+  
+}
+
+.skill-header {
+  margin-bottom: 2rem;
+  font-family: Rancho;
+  color: #264653;
+  font-size: 3rem;
+}
+
+/* .skill-content {
+	/* text-align: center; */
+/* } */
+*/ .skills .skill-writing,
+.skill-programming,
+.skill-recruiting {
+  padding: 1rem;
+  color: #264653;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.recruit-img,
+.program-img,
+.write-img {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+/* Projects */
+.projects {
+  text-align: center;
+  padding: 7% 17%;
+  background-color: #165c54;
+ 
+}
+
+.projects .inner {
+  overflow: hidden;
+}
+
+.projects .inner img {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+}
+
+.projects .card-text {
+  font-family: "Lato", sans-serif;
+}
+
+.projects .card-title {
+  font-family: Rancho;
+  font-size: 2rem;
+}
+
+.i-header {
+  color: #f1faee;
+  font-family: Rancho;
+  font-size: 3rem;
+}
+
+/* Contact */
+
+.contact {
+  background-color: #f1faee;
+  padding: 4% 15%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: Rancho;
+  font-size: 3rem;
+}
+
+.contact p {
+  font-family: Lato;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[type="email"].form-control:focus,
+[type="tel"].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.btn-custom {
+  background-color: #165c54;
+  color: #f1faee;
+}
+
+.btn-custom:hover {
+  color: #165c54;
+  background-color: #f1faee;
+  border: 1px solid #165c54;
+}
+
+.col-auto {
+  width: 100%;
+}
+
+/* Footer */
+
+.footer {
+  padding: 3% 10%;
+  text-align: center;
+  background-color: #f1faee;
+  background: url("blacksad_3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.fab.fa-2x.fa-twitter:hover,
+.fab.fa-2x.fa-github:hover,
+.fab.fa-2x.fa-linkedin-in:hover {
+  color: white;
+}
+
+.footer a {
+  color: #f1faee;
+}
+
+.social {
+  padding: 20px 10px;
+}
+
+/* media query
+extra small - 600px and up
+medium - 768px and up
+large - 992px and up
+extra large - 1200px and up
+*/
+
+@media (min-width: 770px) and (max-width: 990px) {
+  .title {
+    text-align: center;
+  }
+  .card-flex {
+    margin-top: 2rem;
+  }
+  .skills .row .card {
+    margin-bottom: 2rem;
+  }
+  .content h2 {
+    font-size: 1.3rem;
+  }
+  .contact-me h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 771px) {
+  .intro {
+    font-size: 1.2rem;
+  }
+  .skills .row .card {
+    margin-bottom: 2rem;
+  }
+  .contact-me h2 {
+    font-size: 2.3rem;
+  }
+  .skill-header {
+    font-size: 2.3rem;
+  }
+  .skills .row .card {
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(107, 129, 124, 0.5);
+    transition: 0.3s ease-in-out;
+    height: 350px;
+  }
+
+  .skills .row .card:hover {
+    height: 475px;
+  }
+
+  .skills .row .card .content {
+    position: relative;
+    margin-top: -80px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    /* width: 80%; */
+    /* font-size: 60%; */
+  }
+  .content h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 771px) {
+  .contact-me h2 {
+    margin-bottom: 1rem;
+  }
+  /* .projects .card-one {
+    margin-right: 5rem;
+  }
+
+  .projects .card-two {
+    margin-left: 5rem;
+  } */
+}
+
+@media (min-width: 300px) and (max-width: 770px) {
+  .projects .card {
+    margin-bottom: 2rem;
+  }
+}
